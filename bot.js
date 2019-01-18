@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "2";
+const prefix = "-";
 /////////////////////////
 ////////////////////////
 
@@ -313,7 +313,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === '-help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (!)**')
@@ -349,7 +349,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`1play | Last Music`,"http://twitch.tv/Death Shop")
+client.user.setGame(`-play |ii3BoDeee music`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
